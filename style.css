@@ -236,6 +236,7 @@ section#popular {
     justify-content: center;
     gap: 2rem;
     transition: .3s ease-in;
+    margin: 0 5px;
 }
 
 .slide-content img {
@@ -763,7 +764,9 @@ hr.ruler {
     .popular-container h1 {
         font-size: 2rem;
     }
-
+    .popular-container {
+        padding-bottom: 0;
+    }
     .swiper {
         margin-top: 1rem;
     }
@@ -771,8 +774,8 @@ hr.ruler {
     .slide-content {
         flex-wrap: nowrap;
         gap: 1rem;
-        width: 100vw;
     }
+    
 
     .swiper-button-prev::after,
     .swiper-button-next::after {
@@ -782,7 +785,26 @@ hr.ruler {
     section#popular {
         margin-top: 0 !important;
     }
-
+    .image-div button{
+        display:flex !important;
+        padding: 0;
+    }
+    .image-div button:hover{
+        border: none;
+        background: none;
+    }
+    .image-div button:hover a{
+        color: #fff;
+        font-size: 6px;
+    }
+    .image-div button a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 6px;
+        display: flex;
+        display: flex;
+        align-items: center;
+    }
 
 
     /* services section  */
