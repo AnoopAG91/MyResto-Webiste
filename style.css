@@ -18,6 +18,16 @@ body {
     box-shadow: 0 3px 10px rgb(141 141 141 / 30%) !important;
 }
 
+/* scrolled header css  */
+.header-container {
+    background-color: white; 
+    transition: background-color 0.3s ease; 
+}
+
+.header-container.scrolled-header {
+    background-color: #232323 !important;
+}
+
 .logo img {
     transition: .3s ease-in-out;
     background: #fff;
@@ -42,11 +52,13 @@ body {
     position: relative;
     padding-bottom: 5px;
     transition: .3s ease-in-out;
+    width: fit-content;
+    margin: 0 auto;
 }
-
 .menu a:hover {
     color: #fff;
     transition: .3s ease-in-out;
+    width: fit-content;
 }
 
 .menu a::after {
@@ -684,7 +696,7 @@ hr.ruler {
 
     .mob-menu.active {
         display: flex;
-        height: 50vh;
+        height: fit-content;
         padding: 3rem;
     }
 

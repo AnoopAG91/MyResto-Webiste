@@ -8,6 +8,16 @@ toggleBtn.addEventListener('click', function () {
 });
 
 
+// scrolled header 
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.header-container');
+  if (window.scrollY > 100) {
+      header.classList.add('scrolled-header');
+  } else {
+      header.classList.remove('scrolled-header');
+  }
+});
+
 // swiper js 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
