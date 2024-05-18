@@ -19,7 +19,7 @@ window.addEventListener('scroll', function() {
 });
 
 // swiper js 
-const swiper = new Swiper('.swiper', {
+const swiper1 = new Swiper('#swiper1', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -44,10 +44,10 @@ const swiper = new Swiper('.swiper', {
 
 
   // If we need pagination
-  // pagination: {
-  //     el: '.swiper-pagination',
-  //     clickable: true
-  // },
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+  },
 
   // Navigation arrows
   navigation: {
@@ -62,6 +62,36 @@ const swiper = new Swiper('.swiper', {
   speed:1000
 });
 
+
+
+// testimonial swiper js 
+const swiper2 = new Swiper('#swiper2', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+  
+   
+  
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+  
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    speed:1000
+  });
+  
 
 
 
