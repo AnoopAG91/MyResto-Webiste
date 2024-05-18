@@ -20,29 +20,49 @@ window.addEventListener('scroll', function() {
 
 // swiper js 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    // autoplay: {
-    //   delay: 5000,
-    // },
-    
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 5,
+  spaceBetween: 10,
+
+  breakpoints: {
+      // when window width is >= 768px
+      1200: {
+          slidesPerView: 5,
+          spaceBetween: 10
+      },
+      768: {
+          slidesPerView: 4,
+          spaceBetween: 10
+      },
+      100: {
+          slidesPerView: 3,
+          spaceBetween: 10
+      }
+  },
+
+
+  // If we need pagination
+  // pagination: {
+  //     el: '.swiper-pagination',
+  //     clickable: true
+  // },
+
+  // Navigation arrows
+  navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
       el: '.swiper-scrollbar',
-    },
-    speed: 1500,
-    
-  });
+  },
+  speed:1000
+});
+
+
+
+
+
