@@ -7,7 +7,6 @@
 body {
     text-align: center;
     font-family: "Libre Baskerville", "Almarai", sans-serif !important;
-    background-color: #e7e7e749 !important;
 }
 
 
@@ -303,9 +302,8 @@ section#popular {
     justify-content: center !important;
 }
 
-p {
-    text-align: center;
-}
+
+
 
 .popular-container .first-slider .swiper-slide a {
     text-decoration: none;
